@@ -6,8 +6,8 @@ const App = () => (
   <Card>
     <Name>React Course</Name>
     <Price>R$ 25</Price>
-    <Description>Professional features to grow</Description>
-    <Button>Buy</Button>
+    <Description>Professional features for your business to grow.</Description>
+    <Button primary>Buy</Button>
   </Card>
 )
 

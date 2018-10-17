@@ -7,6 +7,9 @@ export const Card = styled.article`
     background-color: ${color};
     color: #ffffff;
     text-align: center;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    margin: 0px
 `;
 
 export const Name = styled.h1`
@@ -35,5 +38,16 @@ export const Button = styled.a`
     transition: all 200ms linear;
     border: 1px solid ${color};
 
-    
+    ${props => props.primary 
+        ? `
+            &:hover {
+                background-color: ${color};
+                color: #ffffff;
+                border: 1px solid #ffffff;
+            }
+        `
+        : `
+            background-color: #cccccc;
+            color: #838383;
+        `}    
 `;
