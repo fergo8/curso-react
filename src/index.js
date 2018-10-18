@@ -1,5 +1,19 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
+
+import Global from "./styles/settings";
+import Reset from "./styles/generic";
+import Base from "./styles/base";
+
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Fragment>
+        <Global.Colors />
+        <Global.Sizes />
+        <Reset.reset />
+        <Base.base />
+        <App />
+    </Fragment>,
+    document.getElementById('root')
+);
