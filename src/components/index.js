@@ -1,4 +1,4 @@
 import CardCollab from "./CardCollab";
-import ButtonCollab from "./Button";
+import ButtonCollab from "./ButtonCollab";
 
 export default { ButtonCollab, CardCollab }
