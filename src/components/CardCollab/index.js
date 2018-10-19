@@ -3,12 +3,15 @@ import Card from "./styles"
 import Obj from "../../objects";
 import Comp from "../../components";
 
-const CardCollab = () => (
+const CardCollab = props => (
     <Card>
-        <Obj.Name>React Course</Obj.Name>
-        <Obj.Price>R$ 25</Obj.Price>
-        <Obj.Description>Professional features for your business to grow.</Obj.Description>
-        <Comp.ButtonCollab primary>Buy</Comp.ButtonCollab>
+        <Obj.Name>{props.name}</Obj.Name>
+        <Obj.Price>
+            <small>c$</small>
+            {props.price}
+        </Obj.Price>
+        <Obj.Description>{props.description}</Obj.Description>
+        <Comp.ButtonCollab primary>Comprar</Comp.ButtonCollab>
     </Card>
 )
 
