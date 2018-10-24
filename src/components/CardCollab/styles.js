@@ -10,6 +10,7 @@ const Card = styled.article`
     margin: 0px;
     width: 370px;
     ${Margin.center};
+    margin-bottom: var(--spacing-large);
 `;
 
 export default Card;
